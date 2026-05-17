@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win DZ - Crash</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a0033, #330066);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 480px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .logo-main {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00;
+            margin-bottom: 10px;
+        }
+        
+        .telegram {
+            background: #229ED9;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,204,0,0.3);
+        }
+        
+        h2 {
+            color: #ffcc00;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .input-group {
+            margin-bottom: 18px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ddd;
+            font-size: 1rem;
+        }
+        
+        input {
+            width: 100%;
+            padding: 14px;
+            background: rgba(0,0,0,0.4);
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #ffff00;
+            box-shadow: 0 0 12px #ffcc00;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(90deg, #ffcc00, #ffd633);
+            color: #1a0033;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ffcc00;
+        }
+        
+        .bookies {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .bookie {
+            text-align: center;
+        }
+        
+        .bookie img {
+            height: 60px;
+            filter: drop-shadow(0 0 8px rgba(255,204,0,0.5));
+        }
+        
+        .promo {
+            background: #ffcc00;
+            color: #1a0033;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <header>
+            <div class="logo-main">WIN DZ CRASH</div>
+            <h1 style="color:#fff; font-size:1.8rem;">🚀 Activation Gratuite</h1>
+        </header>
+
+        <!-- Canal Telegram -->
+        <div style="text-align:center;">
+            <a href="https://t.me/win_dz24" target="_blank" class="telegram">
+                📢 Rejoignez notre Canal Telegram
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>🔑 Entrez vos informations</h2>
+            
+            <div class="input-group">
+                <label for="id">Votre numéro d'ID</label>
+                <input type="text" id="id" placeholder="Entrez votre ID" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="code">Votre code d'activation</label>
+                <input type="text" id="code" placeholder="Entrez le code reçu" required>
+            </div>
+            
+            <button onclick="submitForm()" class="btn">✅ Valider & Activer</button>
+        </div>
+
+        <!-- Bookmakers -->
+        <div class="section">
+            <h2>🎰 Bookmakers Supportés</h2>
+            
+            <div class="bookies">
+                <!-- 1xBet -->
+                <div class="bookie">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/1xbetlogo.png" alt="1xBet Logo" onerror="this.src='https://via.placeholder.com/180x60/000/FFCC00?text=1XBET'">
+                    <div class="promo">Code Promo : <strong>1X_2190315</strong></div>
+                </div>
+                
+                <!-- Melbet -->
+                <div class="bookie">
+                    <img src="https://www.pngkey.com/png/full/715-7150298_melbet.png" alt="Melbet Logo" style="height:70px;">
+                    <div class="promo">Code Promo : <strong>ml_2625184</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align:center;">
+            <p style="margin-bottom:15px; color:#ffcc00;">💡 <strong>Comment activer ?</strong></p>
+            <ol style="text-align:left; line-height:1.8; padding-left:20px;">
+                <li>Inscrivez-vous sur 1xBet ou Melbet avec le code promo</li>
+                <li>Entrez votre ID et le code d'activation ci-dessus</li>
+                <li>Profitez des signaux Crash en illimité !</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        © Win DZ 2026 - Tous droits réservés<br>
+        <small>Pour usage personnel uniquement</small>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const id = document.getElementById('id').value;
+            const code = document.getElementById('code').value;
+            
+            if (!id || !code) {
+                alert("Veuillez remplir tous les champs !");
+                return;
+            }
+            
+            alert("✅ Activation en cours...\n\nMerci ! Votre accès sera bientôt activé.\n\nRejoignez le Telegram pour plus d'infos.");
+            // Ici tu peux rediriger ou simuler une connexion
+            // window.location.href = "#";
+        }
+        
+        // Animation simple
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('%cWin DZ Crash - Page créée avec succès !', 'color:#ffcc00; font-size:14px;');
+        });
+    </script>
+</body>
+</html>
